@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Simulation</h1>
+        <div id="bars-container"></div>
+        <div class="controls">
+            <select id="algorithm-select" onchange="displayDefinition()">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="heap">Heap Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="counting">Counting Sort</option>
+                <option value="bucket">Bucket Sort</option>
+            </select>
+            <button id="sort-btn">Start Sorting</button>
+        </div>
+        <p id="sorting-status" class="sorting-status"></p> 
+        <div class="algorithm-description-container">
+            <p id="algorithm-description" class="algorithm-description"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ishan_Vivek. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

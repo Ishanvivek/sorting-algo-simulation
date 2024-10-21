@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('pexels-eberhardgross-1367192.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #f4f4f4; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #0a0a0a; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    margin-top: 20px; 
+}
+
+select, button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.1em;
+    border-radius: 25px; 
+    border: 1px solid #007acc; 
+    background-color: #ffffff; 
+    color: #000000; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+select:focus, button:hover {
+    background-color: #007acc; 
+    color: #ffffff; 
+}
+
+#algorithm-description {
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: rgba(0, 122, 204, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    margin-top: 30px;
+    overflow: hidden; 
+}
+
+.bar {
+    width: 20px;
+    background-color: #007acc; 
+    margin: 0 2px;
+    transition: height 0.3s, background-color 0.3s; 
+}
+
+.bar:hover {
+    background-color: #f0f0f0; 
+}
+
+.sorted {
+    background-color: #32cd32 !important; /* Green for sorted bars */
+}
+
+.sorting-status {
+    margin-top: 15px; /* Space above the status message */
+    margin-bottom: 20px; /* Added space below the status message */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #32cd32; /* Green color for "Sorting Done" message */
+}
+
+.algorithm-description-container {
+    margin-top: 100px; /* Space above the algorithm descriptions */
+}
+
+.algorithm-description {
+    margin: 10px 0; /* Space above and below each description */
+    padding: 15px; /* Padding inside the description box */
+    background-color: rgba(193, 173, 230, 0.5); /* Light blue background (lighter shade) */
+    border-left: 5px solid #1f00b8; /* Darker left border for emphasis */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1em; /* Font size for the description */
+    color: #ffffff; /* Dark text for contrast */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto; /* Push footer to bottom */
+    padding: 20px 0;
+    color: #f4f4f4; /* Light text color */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+footer p {
+    margin: 0; /* Remove margin */
+    font-size: 1em; /* Font size for footer text */
+}
